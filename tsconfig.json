@@ -8,8 +8,10 @@
     "types": ["node"],
     "paths": {
       "@/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
       "@pages/*": ["./src/pages/*"],
       "@components/*": ["./src/components/*"],
+      "@styles/*": ["./src/styles/*"],
       "@types/*": ["./src/types/*"],
   },
 
