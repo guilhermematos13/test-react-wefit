@@ -8,6 +8,7 @@
     "types": ["node"],
     "paths": {
       "@/*": ["./src/*"],
+      "@api/*": ["./src/api/*"],
       "@assets/*": ["./src/assets/*"],
       "@pages/*": ["./src/pages/*"],
       "@components/*": ["./src/components/*"],
