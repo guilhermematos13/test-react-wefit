@@ -2,8 +2,9 @@ import * as S from "./styles";
 import { Card } from "@components/Card";
 import SearchIcon from "@assets/SearchIcon.svg";
 import { useEffect, useState } from "react";
-import { IGetProductsResponse, getProducts } from "@/api/requests/getProducts";
+import { IGetProductsResponse, getProducts } from "@api/requests/getProducts";
 import { useNavigate } from "react-router-dom";
+import { Loading } from "@components/Loading";
 
 export function Home() {
   const navigate = useNavigate();
@@ -27,24 +28,30 @@ export function Home() {
 
   return (
     <S.HomeContainer>
-      <S.InputContainer>
-        <S.Input placeholder="Buscar filme pelo nome" />
-        <S.SearchButton>
-          <img src={SearchIcon} />
-        </S.SearchButton>
-      </S.InputContainer>
-      <S.GridContainer>
-        {productsList.map((product) => (
-          <Card
-            key={product.id}
-            onClick={() => {}}
-            image={product.image}
-            value={product.price}
-            title={product.title}
-            quantity={product.quantity ?? 1}
-          />
-        ))}
-      </S.GridContainer>
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <S.InputContainer>
+            <S.Input placeholder="Buscar filme pelo nome" />
+            <S.SearchButton>
+              <img src={SearchIcon} />
+            </S.SearchButton>
+          </S.InputContainer>
+          <S.GridContainer>
+            {productsList.map((product) => (
+              <Card
+                key={product.id}
+                onClick={() => {}}
+                image={product.image}
+                value={product.price}
+                title={product.title}
+                quantity={0}
+              />
+            ))}
+          </S.GridContainer>
+        </>
+      )}
     </S.HomeContainer>
   );
 }
