@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.125rem 0.625rem;
+    padding: 1.938rem 0.625rem;
     background-color: ${(props) => props.theme.backgroundColor};
 `
 
