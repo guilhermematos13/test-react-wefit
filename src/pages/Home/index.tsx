@@ -1,13 +1,15 @@
 import * as S from "./styles";
 import { Card } from "@components/Card";
 import SearchIcon from "@assets/SearchIcon.svg";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IGetProductsResponse, getProducts } from "@api/requests/getProducts";
 import { useNavigate } from "react-router-dom";
 import { Loading } from "@components/Loading";
+import { CheckoutContext } from "@/context/CheckoutContext";
 
 export function Home() {
   const navigate = useNavigate();
+  const { addProduct, getTotalItemsById } = useContext(CheckoutContext);
   const [isLoading, setIsLoading] = useState(true);
   const [productsList, setProductsList] = useState<IGetProductsResponse[]>([]);
 
@@ -42,11 +44,11 @@ export function Home() {
             {productsList.map((product) => (
               <Card
                 key={product.id}
-                onClick={() => {}}
+                onClick={() => addProduct(product)}
                 image={product.image}
                 value={product.price}
                 title={product.title}
-                quantity={0}
+                quantity={getTotalItemsById(product.id)}
               />
             ))}
           </S.GridContainer>
