@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.div`
-    max-width: 60rem;
+    max-width: 65.5rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.938rem 0.625rem;
+    padding: 1.938rem 0rem;
     background-color: ${(props) => props.theme.backgroundColor};
 `
 
@@ -21,7 +21,7 @@ export const PageTitleButton = styled.button`
 
 export const MyCartButton = styled.button`
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     border: 0;
     align-items: center;
     cursor: pointer;

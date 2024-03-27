@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0.625rem;
-    max-width: 19.313rem;
+    max-width: 21.125rem;
     align-items: center;
     justify-content: center;
     background-color: ${(props) => props.theme.white};
