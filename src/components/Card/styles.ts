@@ -7,7 +7,8 @@ interface CardButtonProps {
 export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 0.625rem;
+    gap: 0.5rem;
+    padding: 1rem;
     max-width: 21.125rem;
     align-items: center;
     justify-content: center;
@@ -18,20 +19,17 @@ export const CardContainer = styled.div`
 export const CardImage = styled.img`
     width: 9.188rem;
     height: 11.75rem;
-    margin-bottom: 0.5rem;
 `
 
 export const CardTitle = styled.strong`
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     color: ${(props) => props.theme.backgroundColor};
-    margin-bottom: 0.125rem;
 `
 
 export const CardPrice = styled.strong`
     font-size: 1rem;
     font-weight: 700;
     color: ${(props) => props.theme.backgroundColor};
-    margin-bottom: 0.5rem;
 `
 
 export const CardButtonQuantityContainer = styled.div<CardButtonProps>`

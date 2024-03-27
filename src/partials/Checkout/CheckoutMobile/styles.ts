@@ -5,6 +5,7 @@ export const CheckoutContainer = styled.div`
     padding: 1rem;
     border-radius: 4px;
     background-color: ${(props) => props.theme.white};
+    max-height: calc(100vh - 10rem);
     display: none;
 
     @media (max-width: 1024px) {

@@ -10,7 +10,13 @@ export const HeaderContainer = styled.div`
     background-color: ${(props) => props.theme.backgroundColor};
 
     @media (max-width: 1024px) {
-        padding: 0;
+        width: 100%;
+        padding: 1.938rem 1rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        z-index: 10;
     }
 `
 
@@ -41,6 +47,10 @@ export const MyCartTextContainer = styled.div`
         color: ${(props) => props.theme.white};
         font-size: 0.875rem;
         font-weight: 600;
+
+        @media (max-width: 425px) {
+        display: none
+    }
     }
 
     span {

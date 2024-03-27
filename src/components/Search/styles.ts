@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const InputContainer = styled.div`
     display: flex;
     width: 100%;
-    max-width: 65.5rem;
     background-color: ${(props) => props.theme.white};
     border-radius: 8px;
     gap: 16px;
@@ -20,6 +19,19 @@ export const InputContainer = styled.div`
         border: 2px solid ${(props) => props.theme.blue};
         border-radius: 8px;
         pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 21.125rem;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 42.250rem;
+    }
+
+    @media (min-width: 1024px) {
+        max-width: 65.5rem;
+
     }
 `;
 
