@@ -11,7 +11,7 @@ export function Status({
   return (
     <S.StatusContainer>
       <S.StatusTitle>{text}</S.StatusTitle>
-      <img src={imageUrl} />
+      <S.StatusImage src={imageUrl} />
       {onClick && <Button onClick={onClick}>{buttonText}</Button>}
     </S.StatusContainer>
   );

@@ -11,8 +11,22 @@ export const StatusContainer = styled.div`
     height: calc(100vh - 9rem);
 `
 
+export const StatusImage = styled.img`
+    width: 27.938rem;
+    height: 16.563rem;
+
+    @media (max-width: 425px) {
+        width: 22rem;
+        height: 14rem;
+    }
+`
+
 export const StatusTitle = styled.h1`
     color: ${(props) => props.theme.backgroundColor};
     font-size: 1.25rem;
     text-align: center;
+
+    @media (max-width: 425px) {
+        max-width: 200px;
+    }
 `
