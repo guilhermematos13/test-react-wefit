@@ -4,6 +4,11 @@ export const CheckoutContainer = styled.div`
     background-color: ${(props) => props.theme.white};
     border-radius: 0.25rem;
     padding: 1.5rem;
+    display: none;
+
+    @media (min-width: 1024px) {
+    display: block
+    }
 `
 
 export const CheckoutGridContainer = styled.div`

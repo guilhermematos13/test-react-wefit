@@ -23,12 +23,22 @@ export const CheckoutTrashButton = styled.button`
     height: 1.5rem;
     border: 0;
     cursor: pointer;
+
+
+    @media (max-width: 1024px) {
+        width: 1rem;
+        height: 1rem;
+    }
 `
 
 export const CheckoutTotalText = styled.p`
     font-size: 1rem;
     font-weight: 700;
     color: ${(props) => props.theme.backgroundColor};
+
+    @media (min-width: 1024px) {
+        padding: 0 1rem;
+    }
 `
 
 export const CheckoutFooterValueText = styled.p`
@@ -47,4 +57,14 @@ export const CheckoutFooterTotalContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @media (min-width: 1024px) {
+        padding: 0 0.75rem;
+    }
+
+    @media (max-width: 1024px) {
+        margin-bottom: 1rem;
+        justify-content: space-between;
+        width: 100%;
+    }
 `

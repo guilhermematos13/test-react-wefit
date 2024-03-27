@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { CheckoutContext } from "@context/CheckoutContext";
 import { CheckoutDesktop } from "@partials/Checkout/CheckoutDesktop";
+import { CheckoutMobile } from "@/partials/Checkout/CheckoutMobile";
 
 export function Checkout() {
   const { products, setProducts } = useContext(CheckoutContext);
@@ -24,7 +25,10 @@ export function Checkout() {
           onClick={() => navigate("/")}
         />
       ) : (
-        <CheckoutDesktop handleFinishedOrder={handleFinishedOrder} />
+        <>
+          <CheckoutDesktop handleFinishedOrder={handleFinishedOrder} />
+          <CheckoutMobile handleFinishedOrder={handleFinishedOrder} />
+        </>
       )}
     </S.CheckoutContainer>
   );
