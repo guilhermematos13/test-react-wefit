@@ -8,7 +8,7 @@ export const CheckoutContainer = styled.div`
     display: none;
 
     @media (max-width: 1024px) {
-    display: flex
+        display: flex
     }
 `
 

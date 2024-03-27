@@ -8,6 +8,10 @@ export const HeaderContainer = styled.div`
     align-items: center;
     padding: 1.938rem 0rem;
     background-color: ${(props) => props.theme.backgroundColor};
+
+    @media (max-width: 1024px) {
+        padding: 0;
+    }
 `
 
 export const PageTitleButton = styled.button`
