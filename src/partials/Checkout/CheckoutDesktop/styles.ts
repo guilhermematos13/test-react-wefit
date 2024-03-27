@@ -7,7 +7,8 @@ export const CheckoutContainer = styled.div`
     display: none;
 
     @media (min-width: 1024px) {
-    display: block
+    display: block;
+
     }
 `
 

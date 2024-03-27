@@ -26,7 +26,7 @@ export const StatusTitle = styled.h1`
     font-size: 1.25rem;
     text-align: center;
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
         max-width: 200px;
     }
 `

@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar {
         width: 0.25rem;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             display: none;
         }
     }

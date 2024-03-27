@@ -62,7 +62,7 @@ export const CheckoutFooterTotalContainer = styled.div`
         padding: 0 0.75rem;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
         margin-bottom: 1rem;
         justify-content: space-between;
         width: 100%;

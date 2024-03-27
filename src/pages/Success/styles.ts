@@ -6,6 +6,6 @@ export const SuccessContainer = styled(Container)`
     margin: 0 auto;
 
     @media (max-width: 1024px) {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
     }
 `
