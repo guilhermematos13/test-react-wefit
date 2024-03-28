@@ -1,30 +1,75 @@
-# React + TypeScript + Vite
+# Desafio React - WeFit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto foi feito como um desafio para a empresa WeFit para a vaga de Frontend.
 
-Currently, two official plugins are available:
+O desafio é composto por uma tela de listagem de filmes, onde o usuário pode adicioná-los ao carrinho de forma ininterrupta e quando terminar sua escolha, ele pode optar por entrar no carrinho e revisar o seu pedido modificando a quantidade e/ou removendo produtos. Após isso, ele pode concluir a compra, onde é redirecionado para uma página de sucesso. Caso aconteça algum erro no início do fluxo e não conseguirmos exibir a listagem, redirecionamos o usuário para uma tela de erro, onde ele pode clicar para tentar novamente quando lhe for conveniente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto foi desenvolvido em React utilizando diversas ferramentas que impulsionaram meu desenvolvimento e me ajudaram a garantir a qualidade do que foi entregue. Algumas dessas ferramentas foram o styled components, jest, axios, prettier e entre outros que foram detalhados profundamente abaixo.
 
-## Expanding the ESLint configuration
+## ⚙️ Installation / Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Clone Repository / Clonar repositório
+```bash
+  git clone https://github.com/guilhermematos13/test-wefit-react.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Install Dependencies / Instalar Dependências
+```bash
+  npm install
+```
+
+Run Server / Rodar o servidor
+```bash
+  npm run dev:server
+```
+
+Run Project / Rodar o projeto
+```bash
+  npm run dev
+```
+Build Project / Gerar build do Projeto
+```bash
+  npm run build
+```
+
+Run ESLint / Rodar o ESLint
+```bash
+  npm run lint
+```
+
+Run Tests / Rodar os Testes
+```bash
+  npm run test
+```
+
+## 🖥️ Technologies Used / Tecnologias Usadas
+
+-   React (18.2.0)
+-   Typescript (5.2.2)
+
+## 📚 Libraries Used / Bibliotecas Usadas
+
+-   axios
+-   json-server
+-   react-router-dom
+-   ESLint
+-   styled-components
+-   jest
+
+## 🚀 Features / Funcionalidades
+
+-   Responsividade / Responsiveness
+-   Manipulação de Estados / Manipulation of states
+-   Styled Components/ Design made with Styled Components
+-   Criação de Componentes / Component Creation
+-   Feedbacks ao Usuário / User Feedbacks
+-   Conexão com API / API connection
+-   Criação de servidor utilizando json-server / Server creation using json-server
+-   Testes unitários / Unitary tests
+
+## Coverage
+
+
+## Deploy
+
+https://test-react-wefit.vercel.app/
