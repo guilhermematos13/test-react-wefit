@@ -10,7 +10,7 @@ O projeto foi desenvolvido em React utilizando diversas ferramentas que impulsio
 
 Clone Repository / Clonar repositório
 ```bash
-  git clone https://github.com/guilhermematos13/test-wefit-react.git
+  git clone https://github.com/guilhermematos13/test-react-wefit.git
 ```
 
 Install Dependencies / Instalar Dependências
