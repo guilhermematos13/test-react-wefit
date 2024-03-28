@@ -10,7 +10,9 @@ export default {
       '.+\\.(css|svg)$':
           require.resolve('jest-transform-stub'),
       '@utils/(.*)': '<rootDir>/src/utils/$1',
-      '@components': '<rootDir>/src/components',
+      '@assets/(.*)': '<rootDir>/src/assets/$1',
+      '@assets/*': '<rootDir>/src/assets/$1',
+      '@components/(.*)': '<rootDir>/src/components/$1',
       '@context/(.*)': '<rootDir>/src/context/$1',
       '@styles/(.*)': '<rootDir>/src/styles/$1',
   },
