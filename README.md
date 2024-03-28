@@ -2,7 +2,7 @@
 
 Esse projeto foi feito como um desafio para a empresa WeFit para a vaga de Frontend.
 
-O desafio é composto por uma tela de listagem de filmes, onde o usuário pode adicioná-los ao carrinho de forma ininterrupta e quando terminar sua escolha, ele pode optar por entrar no carrinho e revisar o seu pedido modificando a quantidade e/ou removendo produtos. Após isso, ele pode concluir a compra, onde é redirecionado para uma página de sucesso. Caso aconteça algum erro no início do fluxo e não conseguirmos exibir a listagem, redirecionamos o usuário para uma tela de erro, onde ele pode clicar para tentar novamente quando lhe for conveniente.
+O desafio é composto por uma tela de listagem de filmes, onde o usuário pode buscá-lo pelo nome e/ou adicioná-los ao carrinho de forma ininterrupta e quando terminar sua escolha, ele pode optar por entrar no carrinho e revisar o seu pedido modificando a quantidade e/ou removendo produtos. Após isso, ele pode concluir a compra, onde é redirecionado para uma página de sucesso. Caso aconteça algum erro no início do fluxo e não conseguirmos exibir a listagem, redirecionamos o usuário para uma tela de erro, onde ele pode clicar para tentar novamente quando lhe for conveniente.
 
 O projeto foi desenvolvido em React utilizando diversas ferramentas que impulsionaram meu desenvolvimento e me ajudaram a garantir a qualidade do que foi entregue. Algumas dessas ferramentas foram o styled components, jest, axios, prettier e entre outros que foram detalhados profundamente abaixo.
 
