@@ -68,6 +68,7 @@ Run Tests / Rodar os Testes
 -   Testes unitários / Unitary tests
 
 ## Coverage
+![image](https://github.com/guilhermematos13/test-react-wefit/assets/68876798/3c2b9d19-e9d6-4091-8824-78fc627f5719)
 
 
 ## Deploy
