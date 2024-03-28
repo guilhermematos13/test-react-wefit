@@ -1,7 +1,7 @@
 import { useState } from "react";
 import * as S from "./styles";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { SearchIcon } from "@/assets/icons/SearchIcon";
+import { SearchIcon } from "@assets/icons/SearchIcon";
 
 export function Search() {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ export function Search() {
           setQuery(event.target.value);
         }}
       />
-      <S.SearchButton onClick={onSaveQuery}>
+      <S.SearchButton onClick={onSaveQuery} disabled={query.length === 0}>
         <SearchIcon color={query ? "#000000" : "#CCCCCC"} />
       </S.SearchButton>
     </S.InputContainer>

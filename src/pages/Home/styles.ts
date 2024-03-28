@@ -6,18 +6,13 @@ export const HomeContainer = styled(Container)`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media (max-width: 1024px) {
-        
-        margin-top: 2rem;
-    }
 `
 
 export const GridContainer = styled.div`
     display: grid;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
     grid-template-columns: repeat(3, 21.167rem);
 
     @media (max-width: 768px) {
@@ -30,7 +25,7 @@ export const GridContainer = styled.div`
         grid-template-columns: repeat(2, 21.167rem);
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
         margin-top: 1.5rem;
         grid-template-columns: repeat(3, 21.167rem);
     }

@@ -11,7 +11,7 @@ export function Error() {
         imageUrl={EmptyCartPagePerson}
         text="Algo deu errado! Tente novamente mais tarde."
         onClick={() => navigate("/")}
-        buttonText="Tente novamente"
+        buttonText="Recarregar página"
       />
     </S.ErrorContainer>
   );

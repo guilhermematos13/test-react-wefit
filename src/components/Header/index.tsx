@@ -3,7 +3,7 @@ import MyCartIcon from "@assets/MyCartIcon.svg";
 import * as S from "./styles";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { CheckoutContext } from "@/context/CheckoutContext";
+import { CheckoutContext } from "@context/CheckoutContext";
 
 export function Header() {
   const { getTotalItems } = useContext(CheckoutContext);

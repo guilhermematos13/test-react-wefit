@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { LoadingProps } from './interface';
 
 
 const rotate = keyframes`
@@ -8,6 +9,10 @@ const rotate = keyframes`
   to {
     transform: rotate(360deg);
   }
+`;
+
+export const LoadingContainer = styled.div<LoadingProps>`
+  padding: ${({spacing}) => spacing === 'sm' ? '1.5rem' : '2.5rem'}
 `;
 
 export const Loading = styled.div`

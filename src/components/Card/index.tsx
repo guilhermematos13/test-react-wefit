@@ -2,7 +2,7 @@ import { CardProps } from "./interface";
 import ShoppingCardIcon from "@assets/ShoppingCardIcon.svg";
 import * as S from "./styles";
 import { Button } from "@components/Button";
-import { formatCurrency } from "@/utils/formatCurrency";
+import { formatCurrency } from "@utils/formatCurrency";
 
 export function Card({ image, title, quantity, value, onClick }: CardProps) {
   return (

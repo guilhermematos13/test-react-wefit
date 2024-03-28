@@ -56,17 +56,11 @@ export function Home() {
   return (
     <S.HomeContainer>
       {isLoading === "initial" ? (
-        <Loading />
+        <Loading spacing="lg" />
       ) : (
         <>
           <Search />
-          {isLoading === "filter" ? (
-            <S.LoadingContainer>
-              <Loading />
-            </S.LoadingContainer>
-          ) : (
-            <RenderList />
-          )}
+          {isLoading === "filter" ? <Loading spacing="sm" /> : <RenderList />}
         </>
       )}
     </S.HomeContainer>

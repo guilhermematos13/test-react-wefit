@@ -5,8 +5,7 @@ export const CheckoutContainer = styled(Container)`
     max-width: 1440px;
     margin: 0 auto;
 
-    @media (max-width: 1024px) {
-        padding: 0 1rem;
-        margin-top: 3.5rem;
+    @media (max-width: 768px) {
+        margin-top: 98px;
     }
 `

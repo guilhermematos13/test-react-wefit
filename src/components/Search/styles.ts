@@ -23,10 +23,11 @@ export const InputContainer = styled.div`
 
     @media (max-width: 768px) {
         max-width: 21.125rem;
+        margin-top: 98px;
     }
 
     @media (min-width: 768px) {
-        max-width: 42.250rem;
+        max-width: 43.250rem;
     }
 
     @media (min-width: 1024px) {

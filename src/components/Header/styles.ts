@@ -9,7 +9,7 @@ export const HeaderContainer = styled.div`
     padding: 1.938rem 0rem;
     background-color: ${(props) => props.theme.backgroundColor};
 
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
         width: 100%;
         padding: 1.938rem 1rem;
         position: fixed;
