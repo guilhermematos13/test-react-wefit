@@ -4,9 +4,9 @@ export const InputContainer = styled.div`
     display: flex;
     width: 100%;
     background-color: ${(props) => props.theme.white};
-    border-radius: 8px;
-    gap: 16px;
-    padding: 16px;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    padding: 1rem;
     position: relative;
 
     &:focus-within::after {
@@ -17,13 +17,13 @@ export const InputContainer = styled.div`
         right: 0;
         bottom: 0;
         border: 2px solid ${(props) => props.theme.blue};
-        border-radius: 8px;
+        border-radius: 0.5rem;
         pointer-events: none;
     }
 
     @media (max-width: 768px) {
         max-width: 21.125rem;
-        margin-top: 98px;
+        margin-top: 6.125rem;
     }
 
     @media (min-width: 768px) {
